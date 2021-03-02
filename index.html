@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- Bootstrap JS and Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Script to load html files -->
+  <script src="scripts/load.js"></script>
+  <!-- Script for login handling -->
+  <script src="scripts/login.js"></script>
+  <!-- CSS Style -->
+  <link rel="stylesheet" href="styles/style.css">
+
+  <title>Budget Planner</title>
+</head>
+
+
+<body>
+  <div data-include="header"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-lg-auto">
+        <h1>Welcome!</h1>
+
+        <h2>Please Login</h2>
+
+        <form class="row g-3 needs-validation justify-content-center" novalidate>
+          <div class="col-md-8">
+            <div class="mb-3">
+              <label for="emailInput" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please provide a valid email.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="passwordInput" class="form-label">Password</label>
+              <input type="password" class="form-control" id="passwordInput" minlength="8" required>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please enter valid password (8+ characters).</div>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-secondary" onclick="checkManagerLogin()">Project Manager</button>
+            <button type="submit" class="btn btn-secondary" onclick="checkFinanceLogin()">Finance Team Member</button>
+          </div>
+        </form>
+          
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
+
+  <div data-include="footer"></div>
+</body>
+
+</html>

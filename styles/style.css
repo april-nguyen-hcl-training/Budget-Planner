@@ -1,0 +1,121 @@
+/* header(navbar) and footer colors */
+footer div, nav.navbar {
+  background-color: #B7D5DD;
+}
+body{
+  background-color: #F2F4F4;
+  color: #424949;
+}
+a.navbar-brand {
+  font-weight: bold;
+  text-shadow: 2px 2px #EA95AC;
+}
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 550;
+  text-shadow: 1px 1px #f8f9fa;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: #B7D5DD;
+  color: #F2F4F4;
+  text-shadow: 2px 1px #EA95AC;
+}
+/* index */
+h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+h4 {
+  text-shadow: 2px 2px  #EA95AC;
+  color: #F2F4F4;
+}
+/* general */
+body div.container {
+  padding-top: 20px;
+}
+h1, h2 {
+  text-shadow: 2px 2px  #B7D5DD;
+  color: #EA95AC;
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+p, li a.page-link {
+  color: #424949;
+}
+/* pagination (menu) */
+li a.page-link:hover, li a.active{
+  background-color: #B7D5DD;
+  color: #F2F4F4;
+  text-shadow: 1px 1px #EA95AC;
+}
+/* images */
+.img-fluid {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+/* form */
+form {
+  padding-bottom: 20px;
+}
+button.btn-secondary:hover {
+  background-color: #B7D5DD;
+  border-color: #B7D5DD;
+  color: #F2F4F4;
+  text-shadow: 1px 2px #EA95AC;
+}
+button.btn-secondary {
+  font-weight: 600;
+  background-color: #EA95AC;
+  border-color: #EA95AC;
+  color: #F2F4F4;
+  text-shadow: 1px 2px #90b8c4;
+}
+/* Sticky footer */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 55px;
+}
+#finance-footer {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 55px;
+}
+/* deal */
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+td, th {
+  text-align: left;
+}
+#project_cost, #budget_Total{
+  text-align: right;
+}
+#delete_button, #Delete{
+  text-align: center;
+}
+#checkboxesDiv{
+  max-height: 100px;
+  margin-bottom: 10px;
+  overflow-y:auto;
+  -webkit-overflow-scrolling: touch;
+}
